@@ -1,9 +1,9 @@
 name: Selenium 축구 이월 공지 확인
 
-on:
-  schedule:
-    - cron: '0 5 * * *'  # 매일 14:00 KST (UTC 기준 05:00)
-  workflow_dispatch:  # 수동 실행 가능
+#on:
+  #schedule:
+    - #cron: '0 5 * * *'  # 매일 14:00 KST (UTC 기준 05:00)
+  #workflow_dispatch:  # 수동 실행 가능
 
 permissions:
   contents: read
