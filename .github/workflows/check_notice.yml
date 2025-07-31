@@ -41,4 +41,7 @@ jobs:
           sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
 
       - name: Run notice checker script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: python check_notice.py
